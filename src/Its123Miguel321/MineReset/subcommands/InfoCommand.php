@@ -1,13 +1,12 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands;
+namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as TF;
 
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SubCommand;
-use ReformedDevs\Prisons_Core\Core\Utils\ServerUtils;
+use Its123Miguel321\MineReset\subcommands\SubCommand;
 
 class InfoCommand extends SubCommand
 {
@@ -47,7 +46,7 @@ class InfoCommand extends SubCommand
 
         if(is_null($mine))
         {
-            $sender->sendMessage(ServerUtils::ERROR . TF::DARK_GRAY . strtolower($args[0]) . TF::GRAY . ' is not a mine!');
+            $sender->sendMessage(TF::DARK_GRAY . strtolower($args[0]) . TF::GRAY . ' is not a mine!');
             return false;
         }
 
