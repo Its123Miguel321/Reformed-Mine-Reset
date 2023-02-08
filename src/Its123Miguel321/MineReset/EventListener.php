@@ -1,6 +1,6 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset;
+namespace Its123Miguel321\MineReset;
 
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\Listener;
