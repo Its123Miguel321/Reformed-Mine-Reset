@@ -1,15 +1,14 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands;
+namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
 use pocketmine\item\StringToItemParser;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as TF;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SubCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\SellSystem\settings\SellSettings;
-use ReformedDevs\Prisons_Core\Core\Utils\ServerUtils;
+
+use Its123Miguel321\MineReset\ResetSettings;
+use Its123Miguel321\MineReset\subcommands\SubCommand;
 
 class SetCommand extends SubCommand
 {
@@ -77,13 +76,6 @@ class SetCommand extends SubCommand
 			$set = explode(':', $set);
 			$block_name = (string) str_replace('_', ' ', $set[0]);
 			$chance = (int) $set[1];
-
-            if(!(isset(SellSettings::BLOCK_PRICES[strtolower($block_name)])))
-            {
-                $sender->sendMessage(ResetSettings::PREFIX . TF::DARK_GRAY . $block_name . TF::RED . ' is not a sellable block! Please try a different block!');
-                return false;
-            }
-
 			$totalPercent += $chance;
 
 			$data[] = [
