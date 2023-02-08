@@ -1,15 +1,16 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks;
+namespace Its123Miguel321\MineReset\tasks;
 
 use pocketmine\block\VanillaBlocks;
 use pocketmine\scheduler\Task;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\world\format\Chunk;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\Mine;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\MineReset;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
+
+use Its123Miguel321\MineReset\Mine;
+use Its123Miguel321\MineReset\MineReset;
+use Its123Miguel321\MineReset\ResetSettings;
 
 class AutoResetTask extends Task
 {
