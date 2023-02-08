@@ -1,15 +1,16 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands;
+namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
 use pocketmine\item\enchantment\EnchantmentInstance;
 use pocketmine\item\VanillaItems;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as TF;
-use ReformedDevs\Prisons_Core\Core\plugins\CustomEnchantments\manager\CustomEnchantManager;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SubCommand;
+
+use Its123Miguel321\CustomEnchantments\manager\CustomEnchantManager;
+use Its123Miguel321\MineReset\ResetSettings;
+use Its123Miguel321\MineReset\subcommands\SubCommand;
 
 class WandCommand extends SubCommand
 {
