@@ -1,12 +1,13 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands;
+namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat as TF;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SubCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks\ResetTask;
+
+use Its123Miguel321\MineReset\ResetSettings;
+use Its123Miguel321\MineReset\subcommands\SubCommand;
+use Its123Miguel321\MineReset\tasks\ResetTask;
 
 class ResetCommand extends SubCommand
 {
