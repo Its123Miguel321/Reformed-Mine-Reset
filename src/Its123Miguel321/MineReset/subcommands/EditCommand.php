@@ -60,3 +60,4 @@ class EditCommand extends SubCommand
 		return true;
 	}
 }
+
