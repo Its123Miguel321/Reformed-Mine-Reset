@@ -6,7 +6,6 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 
 use Its123Miguel321\MineReset\subcommands\SubCommand;
-use Its123Miguel321\MineReset\MineReset;
 use Its123Miguel321\MineReset\subcommands\CreateCommand;
 use Its123Miguel321\MineReset\subcommands\DeleteCommand;
 use Its123Miguel321\MineReset\subcommands\EditCommand;
