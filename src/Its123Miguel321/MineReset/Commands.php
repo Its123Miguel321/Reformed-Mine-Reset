@@ -1,22 +1,23 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset;
+namespace Its123Miguel321\MineReset;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SubCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\MineReset;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\CreateCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\DeleteCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\EditCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\HelpCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\InfoCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\ListCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\MineThemeCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\ResetAllCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\ResetCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SetCommand;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\WandCommand;
+
+use Its123Miguel321\MineReset\subcommands\SubCommand;
+use Its123Miguel321\MineReset\MineReset;
+use Its123Miguel321\MineReset\subcommands\CreateCommand;
+use Its123Miguel321\MineReset\subcommands\DeleteCommand;
+use Its123Miguel321\MineReset\subcommands\EditCommand;
+use Its123Miguel321\MineReset\subcommands\HelpCommand;
+use Its123Miguel321\MineReset\subcommands\InfoCommand;
+use Its123Miguel321\MineReset\subcommands\ListCommand;
+use Its123Miguel321\MineReset\subcommands\MineThemeCommand;
+use Its123Miguel321\MineReset\subcommands\ResetAllCommand;
+use Its123Miguel321\MineReset\subcommands\ResetCommand;
+use Its123Miguel321\MineReset\subcommands\SetCommand;
+use Its123Miguel321\MineReset\subcommands\WandCommand;
 
 class Commands extends Command
 {
