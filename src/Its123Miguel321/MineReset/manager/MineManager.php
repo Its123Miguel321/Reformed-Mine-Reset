@@ -1,6 +1,6 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\manager;
+namespace Its123Miguel321\MineReset\manager;
 
 use pocketmine\command\CommandSender;
 use pocketmine\item\StringToItemParser;
@@ -11,10 +11,10 @@ use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\world\Position;
 use pocketmine\world\World;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\Mine;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\MineReset;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
-use ReformedDevs\Prisons_Core\Core\Utils\ServerUtils;
+
+use Its123Miguel321\MineReset\Mine;
+use Its123Miguel321\MineReset\MineReset;
+use Its123Miguel321\MineReset\ResetSettings;
 
 class MineManager
 {
