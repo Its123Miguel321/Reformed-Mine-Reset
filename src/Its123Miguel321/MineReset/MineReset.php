@@ -1,9 +1,9 @@
 <?php
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset;
 
-use ReformedDevs\Prisons_Core\Core\Utils\CorePlugin;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\manager\MineManager;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks\AutoResetTask;
+namespace Its123Miguel321\MineReset;
+
+use Its123Miguel321\MineReset\manager\MineManager;
+use Its123Miguel321\MineReset\tasks\AutoResetTask;
 
 class MineReset extends CorePlugin
 {
