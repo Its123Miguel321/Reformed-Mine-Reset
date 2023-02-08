@@ -2,6 +2,8 @@
 
 namespace Its123Miguel321\MineReset;
 
+use pocketmine\plugin\PluginBase;
+
 use Its123Miguel321\MineReset\manager\MineManager;
 use Its123Miguel321\MineReset\tasks\AutoResetTask;
 
@@ -20,8 +22,8 @@ class MineReset extends PluginBase
     {
         $this->manager = new MineManager($this);
 
-        $this->getCommandMap()->register($this->getName(), new Commands($this));
-        $this->getPluginManager()->registerEvents(new EventListener($this), $this->getMain());
+        $this->getServer()->getCommandMap()->register($this->getName(), new Commands($this));
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this->getMain());
 
         $this->getScheduler()->scheduleRepeatingTask(new AutoResetTask($this), 20 * ResetSettings::RESET_INTERVAL);
     }
