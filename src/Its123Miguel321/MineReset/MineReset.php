@@ -5,10 +5,15 @@ namespace Its123Miguel321\MineReset;
 use Its123Miguel321\MineReset\manager\MineManager;
 use Its123Miguel321\MineReset\tasks\AutoResetTask;
 
-class MineReset extends CorePlugin
+class MineReset extends PluginBase
 {
+    /** @var MineManager $manager */
+    private $manager;
+    
+    
+    
     /**
-     * What happens when CorePlugin is enabled!
+     * What happens when PluginBase is enabled!
      * 
      */
     public function onEnable() : void
@@ -18,7 +23,7 @@ class MineReset extends CorePlugin
         $this->getCommandMap()->register($this->getName(), new Commands($this));
         $this->getPluginManager()->registerEvents(new EventListener($this), $this->getMain());
 
-        $this->getMain()->getScheduler()->scheduleRepeatingTask(new AutoResetTask($this), 20 * ResetSettings::RESET_INTERVAL);
+        $this->getScheduler()->scheduleRepeatingTask(new AutoResetTask($this), 20 * ResetSettings::RESET_INTERVAL);
     }
     
     
@@ -29,6 +34,6 @@ class MineReset extends CorePlugin
      */
     public function onDisable() : void
     {
-        $this->getManager()->save();
+        $this->manager->save();
     }
 }
