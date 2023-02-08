@@ -1,10 +1,11 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands;
+namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\manager\MineManager;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\MineReset;
+
+use Its123Miguel321\MineReset\manager\MineManager;
+use Its123Miguel321\MineReset\MineReset;
 
 abstract class SubCommand
 {
