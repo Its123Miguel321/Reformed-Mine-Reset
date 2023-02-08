@@ -1,6 +1,6 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset;
+namespace Its123Miguel321\MineReset;
 
 use pocketmine\utils\TextFormat as TF;
 
