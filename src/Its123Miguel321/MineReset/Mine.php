@@ -1,6 +1,6 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset;
+namespace Its123Miguel321\MineReset;
 
 use pocketmine\block\Block;
 use pocketmine\command\CommandSender;
@@ -8,9 +8,8 @@ use pocketmine\math\Vector3;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat as TF;
 use pocketmine\world\World;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks\AsyncResetTask;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks\ResetTask;
-use ReformedDevs\Prisons_Core\Main;
+use Its123Miguel321\MineReset\tasks\AsyncResetTask;
+use Its123Miguel321\MineReset\tasks\ResetTask;
 
 class Mine
 {
