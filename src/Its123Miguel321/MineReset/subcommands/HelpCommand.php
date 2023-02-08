@@ -1,13 +1,12 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands;
+namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
 use pocketmine\utils\TextFormat as TF;
 
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\Commands;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\subcommands\SubCommand;
-use ReformedDevs\Prisons_Core\Core\Utils\ServerUtils;
+use Its123Miguel321\MineReset\Commands;
+use Its123Miguel321\MineReset\subcommands\SubCommand;
 
 class HelpCommand extends SubCommand
 {
@@ -44,7 +43,7 @@ class HelpCommand extends SubCommand
 		
 		if(!(is_numeric($args[0])))
 		{
-			$sender->sendMessage(ServerUtils::ERROR . TF::GRAY . 'Page number must be numeric!');
+			$sender->sendMessage(TF::GRAY . 'Page number must be numeric!');
 			return false;
 		}
 		
