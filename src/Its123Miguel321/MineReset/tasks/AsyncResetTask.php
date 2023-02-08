@@ -1,6 +1,6 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks;
+namespace Its123Miguel321\MineReset\tasks;
 
 use pocketmine\block\BlockFactory;
 use pocketmine\math\AxisAlignedBB;
@@ -9,10 +9,10 @@ use pocketmine\player\Player;
 use pocketmine\scheduler\AsyncTask;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat as TF;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\manager\MineManager;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\MineReset;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
-use ReformedDevs\Prisons_Core\Main;
+
+use Its123Miguel321\MineReset\manager\MineManager;
+use Its123Miguel321\MineReset\MineReset;
+use Its123Miguel321\MineReset\ResetSettings;
 
 class AsyncResetTask extends AsyncTask
 {
@@ -120,8 +120,6 @@ class AsyncResetTask extends AsyncTask
     {
         $results = $this->getResult();
         $server = Server::getInstance();
-        /** @var Main $main */
-        $main = $server->getPluginManager()->getPlugin('Prisons_Core');
         /** @var MineReset $plugin */
         $plugin = $main->getEnabledPlugins()->getPlugin('MineReset');
         /** @var MineManager $manager */
