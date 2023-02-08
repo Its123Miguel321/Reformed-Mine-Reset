@@ -3,3 +3,7 @@ main: Its123Miguel321\MineReset\MineReset
 version: 2.0
 api: 4.0.0
 author: Its123Miguel321
+
+permissions:
+ minereset.commands:
+  default: op
