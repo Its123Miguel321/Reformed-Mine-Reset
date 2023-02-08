@@ -1,13 +1,13 @@
 <?php
 
-namespace ReformedDevs\Prisons_Core\Core\plugins\MineReset\tasks;
+namespace Its123Miguel321\MineReset\tasks;
 
 use pocketmine\command\CommandSender;
 use pocketmine\scheduler\Task;
 use pocketmine\Server;
 use pocketmine\utils\TextFormat as TF;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\Mine;
-use ReformedDevs\Prisons_Core\Core\plugins\MineReset\ResetSettings;
+use Its123Miguel321\MineReset\Mine;
+use Its123Miguel321\MineReset\ResetSettings;
 
 class ResetAllTask extends Task
 {
