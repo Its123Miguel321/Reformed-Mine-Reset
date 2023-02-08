@@ -34,6 +34,19 @@ class MineReset extends PluginBase
      */
     public function onDisable() : void
     {
-        $this->manager->save();
+        $this->getManager()->save();
+    }
+    
+    
+    
+    /**
+     * Returns the manager
+     * 
+     * @return MineManager
+     * 
+     */
+    public function getManager() : MineManager
+    {
+        return $this->manager;
     }
 }
