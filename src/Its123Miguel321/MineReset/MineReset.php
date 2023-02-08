@@ -23,7 +23,7 @@ class MineReset extends PluginBase
         $this->manager = new MineManager($this);
 
         $this->getServer()->getCommandMap()->register($this->getName(), new Commands($this));
-        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this->getMain());
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
 
         $this->getScheduler()->scheduleRepeatingTask(new AutoResetTask($this), 20 * ResetSettings::RESET_INTERVAL);
     }
