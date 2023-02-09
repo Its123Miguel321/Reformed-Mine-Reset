@@ -36,7 +36,7 @@ class InfoCommand extends SubCommand
 	 */
 	public function execute(CommandSender $sender, array $args) : bool
 	{
-        if(!(isset($args[0]) || !(isset($args[1]))))
+        if(!(isset($args[0])) || !(isset($args[1])))
         {
             $sender->sendMessage(TF::BOLD . TF::RED . 'Usage: ' . TF::RESET . $this->getDescription());
             return false;
