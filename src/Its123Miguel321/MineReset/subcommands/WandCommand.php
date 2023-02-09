@@ -4,11 +4,11 @@ namespace Its123Miguel321\MineReset\subcommands;
 
 use pocketmine\command\CommandSender;
 use pocketmine\item\enchantment\EnchantmentInstance;
+use pocketmine\item\enchantment\VanillaEnchantments;
 use pocketmine\item\VanillaItems;
 use pocketmine\player\Player;
 use pocketmine\utils\TextFormat as TF;
 
-use Its123Miguel321\CustomEnchantments\manager\CustomEnchantManager;
 use Its123Miguel321\MineReset\ResetSettings;
 use Its123Miguel321\MineReset\subcommands\SubCommand;
 
@@ -47,7 +47,7 @@ class WandCommand extends SubCommand
             TF::GOLD . 'Click/Tap' . TF::GRAY . ' on a block to select second position!'
         ]);
 
-		$item->addEnchantment(new EnchantmentInstance(CustomEnchantManager::TEST(), 1));
+		$item->addEnchantment(new EnchantmentInstance(VanillaEnchantments::UNBREAKING(), 1));
         $item->getNamedTag()->setByte('isWand', true);
 
         if($sender->getInventory()->canAddItem($item))
